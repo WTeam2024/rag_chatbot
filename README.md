@@ -1,5 +1,9 @@
 # RAG (Retrieval-augmented generation) ChatBot
 
+<a target="_blank" href="https://colab.research.google.com/github/WTeam2024/rag_chatbot/blob/main/chatbot_WTeam.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 > [!IMPORTANT]
 > The code has been tested on `Google Colab` running with a T4 GPU. 
 > So far, there is no way to use only the CPU.
