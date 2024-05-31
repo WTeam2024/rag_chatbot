@@ -40,12 +40,46 @@ relevant context from previous conversations to provide more accurate answers.
 
 ## About the components
 
-As LLM we chose to use *cerbero-7b*:
-- is the first 100% Free and Open Source Italian Large Language Model (LLM) ready to be used for research or commercial applications.
-- built on top of mistral-7b, which outperforms Llama2 13B across all benchmarks and surpasses Llama1 34B in numerous metrics.
-- is specifically crafted to fill the void in Italy's AI landscape.
+As LLM we chose to use *LLaMAntino-3-ANITA-8B-Inst-DPO-ITA*:
+- the model is an instruction-tuned version of **Meta-Llama-3-8b-instruct** (a fine-tuned *LLaMA3* model);
+- this model version aims to be the a Multilingual Model 🏁 (EN 🇺🇸 + ITA🇮🇹) to further fine-tuning on Specific Tasks in **Italian**;
+- wants to provide Italian NLP researchers with an improved model for the Italian Language 🇮🇹 use cases.
 
-See the [Paper](https://arxiv.org/abs/2311.15698) and the [Github Page](https://github.com/galatolofederico/cerbero-7b). Details on [Hugging Face](https://huggingface.co/galatolo/cerbero-7b)!
+See the [Github Page](https://github.com/marcopoli/LLaMAntino-3-ANITA). Details on [Hugging Face](https://huggingface.co/swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA)!
+
+Citation:
+
+```bibtex
+@misc{polignano2024advanced,
+      title={Advanced Natural-based interaction for the ITAlian language: LLaMAntino-3-ANITA}, 
+      author={Marco Polignano and Pierpaolo Basile and Giovanni Semeraro},
+      year={2024},
+      eprint={2405.07101},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+
+```bibtex
+@misc{basile2023llamantino,
+      title={LLaMAntino: LLaMA 2 Models for Effective Text Generation in Italian Language}, 
+      author={Pierpaolo Basile and Elio Musacchio and Marco Polignano and Lucia Siciliani and Giuseppe Fiameni and Giovanni Semeraro},
+      year={2023},
+      eprint={2312.09993},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+
+```bibtex
+@article{llama3modelcard,
+  title={Llama 3 Model Card},
+  author={AI@Meta},
+  year={2024},
+  url = {https://github.com/meta-llama/llama3/blob/main/MODEL_CARD.md}
+}
+```
+
 
 As Embedding Model we chose *paraphrase-multilingual-MiniLM-L12-v2*:
 - This is a sentence-transformers model: It maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search.
