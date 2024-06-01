@@ -98,3 +98,29 @@ In order to use our chatbot:
 
 > [!WARNING]
 > Our chatbot will only recognize PDFs.
+
+# OLLAMA:
+
+Ollama is a tool to run Large Language Models locally, without the need of a cloud service. Its usage is similar to Docker, but it's specifically designed for LLMs. You can use it as an interactive shell, through its REST API or using it from a Python library. 
+
+## The greatest advantage:
+
+How can we use Ollama? Just follow a few steps:
+
+* Download Ollama from the official website (Windows), or for MacOS and Linux users, you can install Ollama with one command: `curl https://ollama.ai/install.sh | sh`;
+* Once installed, Ollama creates an API where it serves the model, allowing users to interact with the model directly from their local machine;
+* Running models using Ollama is a simple process. Users can download and run models using the `run` command in the terminal: `ollama run codellama`.
+  
+That's all! Now we can communicate with our LLM. For more information see the [Github](https://github.com/ollama/ollama) page and the [Official](https://ollama.com/) page.
+
+## About our project:
+
+We thought it would also be interesting to present this other way. However, due to lack of time, we were not able to make the code as complete as the previously presented version. The code is working and you can interact with our LLM, but as an example we only upload one PDF file instead of all PDFs. 
+
+Feel free to use the code and use it as a **starting point** for your project!
+
+Here the code: 
+
+<a target="_blank" href="https://colab.research.google.com/github/WTeam2024/rag_chatbot/blob/main/Ollama_version_of_WTeams's_Chatbot.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
